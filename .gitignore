@@ -1,2 +1,8 @@
 /venv
 /artifcats
+
+summarizer-data.zip
+research/pegasus-finetuned/
+research/pegasus-model/
+research/pegasus-tokenizer/
+research/summarizer-data/
