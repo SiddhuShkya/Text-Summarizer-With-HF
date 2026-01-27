@@ -1,9 +1,6 @@
-from src.textSummarizer.constants import *
+from src.textSummarizer.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 from src.textSummarizer.entity import DataIngestionConfig, DataTransformationConfig
 from src.textSummarizer.utils.common import read_yaml, create_directories
-
-print(CONFIG_FILE_PATH)
-print(PARAMS_FILE_PATH)
 
 
 class ConfigurationManager:
