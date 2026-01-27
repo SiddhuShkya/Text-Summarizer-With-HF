@@ -1,5 +1,6 @@
 /venv
 /artifacts
+/logs
 
 summarizer-data.zip
 research/pegasus-finetuned/
