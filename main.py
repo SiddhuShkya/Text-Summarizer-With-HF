@@ -31,3 +31,18 @@ try:
 except Exception as e:
     logger.exception(f"Error in stage {STAGE_NAME}: {e}")
     raise e
+
+STAGE_NAME = "Model Trainer Stage"
+
+try:
+    logger.info(f">>>>>> Stage {STAGE_NAME} started <<<<<<")
+    from src.textSummarizer.pipeline.stage3_model_trainer import (
+        ModelTrainerTrainingPipeline,
+    )
+
+    model_trainer = ModelTrainerTrainingPipeline()
+    model_trainer.initiate_model_trainer()
+    logger.info(f">>>>>> Stage {STAGE_NAME} completed <<<<<<")
+except Exception as e:
+    logger.exception(f"Error in stage {STAGE_NAME}: {e}")
+    raise e
