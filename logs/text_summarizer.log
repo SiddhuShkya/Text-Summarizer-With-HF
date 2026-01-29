@@ -214,3 +214,107 @@ Traceback (most recent call last):
   File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2026-01-29 12:34:30,032: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:34:30,035: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:34:30,036: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:34:30,037: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:35:17,287: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:35:17,289: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:35:17,290: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:35:17,290: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:36:57,484: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:36:57,486: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:36:57,487: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:36:57,487: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:37:35,617: ERROR: common: Error reading YAML file 'config/config.yaml': [Errno 2] No such file or directory: 'config/config.yaml']
+[2026-01-29 12:37:45,947: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:37:45,948: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:37:45,949: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:37:45,950: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:38:58,611: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:38:58,613: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:38:58,614: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:38:58,614: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:41:02,148: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:41:02,150: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:41:02,151: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:41:02,152: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:42:06,200: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:42:06,203: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:42:06,203: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:42:06,204: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:44:02,078: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:44:02,080: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:44:02,080: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:44:02,081: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:47:02,741: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:47:02,743: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:47:02,744: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:47:02,744: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:48:29,024: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:48:29,026: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:48:29,027: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:48:29,028: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:48:46,589: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:48:46,591: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:48:46,592: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:48:46,593: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:50:21,287: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:50:21,289: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:50:21,290: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:50:21,291: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:51:46,059: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:51:46,061: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:51:46,061: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:51:46,062: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 12:54:14,916: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:54:14,919: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:54:14,921: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:54:14,926: INFO: common: Directory 'artifacts/data_transformation' created successfully or already exists.]
+[2026-01-29 12:55:58,184: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 12:55:58,185: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 12:55:58,186: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 12:55:58,187: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-29 13:01:16,277: INFO: rouge_scorer: Using default tokenizer.]
+[2026-01-29 13:33:43,603: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2026-01-29 13:33:43,605: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 13:33:43,606: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 13:33:43,606: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 13:33:43,606: INFO: common: Directory 'artifacts/data_ingestion' created successfully or already exists.]
+[2026-01-29 13:33:43,606: INFO: data_ingestion: File already exists at artifacts/data_ingestion/summarizer-data.zip. Skipping download.]
+[2026-01-29 13:33:43,680: INFO: data_ingestion: File extracted successfully at artifacts/data_ingestion]
+[2026-01-29 13:33:43,680: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<]
+[2026-01-29 13:33:43,681: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<]
+[2026-01-29 13:33:43,683: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 13:33:43,683: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 13:33:43,684: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 13:33:43,684: INFO: common: Directory 'artifacts/data_transformation' created successfully or already exists.]
+[2026-01-29 13:33:47,735: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<]
+[2026-01-29 13:33:47,735: INFO: main: >>>>>> Stage Model Trainer Stage started <<<<<<]
+[2026-01-29 13:33:47,737: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-29 13:33:47,738: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-29 13:33:47,738: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-29 13:33:47,738: INFO: common: Directory 'artifacts/model_trainer' created successfully or already exists.]
+[2026-01-29 13:34:01,773: ERROR: main: Error in stage Model Trainer Stage: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)]
+Traceback (most recent call last):
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/main.py", line 43, in <module>
+    model_trainer.initiate_model_trainer()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/src/textSummarizer/pipeline/stage3_model_trainer.py", line 13, in initiate_model_trainer
+    model_trainer.train()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/src/textSummarizer/components/model_trainer.py", line 53, in train
+    trainer.train()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 4071, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2852, in backward
+    loss.backward(**kwargs)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/_tensor.py", line 630, in backward
+    torch.autograd.backward(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 364, in backward
+    _engine_run_backward(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
