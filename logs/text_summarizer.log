@@ -318,3 +318,65 @@ Traceback (most recent call last):
   File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2026-01-30 12:21:23,998: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2026-01-30 12:21:24,000: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-30 12:21:24,002: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-30 12:21:24,002: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-30 12:21:24,002: INFO: common: Directory 'artifacts/data_ingestion' created successfully or already exists.]
+[2026-01-30 12:21:24,002: INFO: data_ingestion: File already exists at artifacts/data_ingestion/summarizer-data.zip. Skipping download.]
+[2026-01-30 12:21:24,609: INFO: data_ingestion: File extracted successfully at artifacts/data_ingestion]
+[2026-01-30 12:21:24,609: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<]
+[2026-01-30 12:21:24,609: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<]
+[2026-01-30 12:21:24,611: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-30 12:21:24,612: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-30 12:21:24,612: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-30 12:21:24,612: INFO: common: Directory 'artifacts/data_transformation' created successfully or already exists.]
+[2026-01-30 12:21:29,898: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<]
+[2026-01-30 12:21:29,899: INFO: main: >>>>>> Stage Model Trainer Stage started <<<<<<]
+[2026-01-30 12:21:29,900: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-30 12:21:29,901: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-30 12:21:29,901: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-30 12:21:29,901: INFO: common: Directory 'artifacts/model_trainer' created successfully or already exists.]
+[2026-01-30 12:21:41,475: ERROR: main: Error in stage Model Trainer Stage: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)]
+Traceback (most recent call last):
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/main.py", line 43, in <module>
+    model_trainer.initiate_model_trainer()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/src/textSummarizer/pipeline/stage3_model_trainer.py", line 13, in initiate_model_trainer
+    model_trainer.train()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/src/textSummarizer/components/model_trainer.py", line 53, in train
+    trainer.train()
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/transformers/trainer.py", line 4071, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2852, in backward
+    loss.backward(**kwargs)
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/_tensor.py", line 630, in backward
+    torch.autograd.backward(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 364, in backward
+    _engine_run_backward(
+  File "/home/siddhu/Desktop/Text-Summarizer-With-HF/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 3.63 GiB of which 12.31 MiB is free. Including non-PyTorch memory, this process has 3.57 GiB memory in use. Of the allocated memory 3.46 GiB is allocated by PyTorch, and 36.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2026-01-30 12:22:39,525: INFO: server: Started server process [106222]]
+[2026-01-30 12:22:39,525: INFO: on: Waiting for application startup.]
+[2026-01-30 12:22:39,525: INFO: on: Application startup complete.]
+[2026-01-30 12:22:39,525: INFO: server: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)]
+[2026-01-30 12:24:45,504: INFO: server: Shutting down]
+[2026-01-30 12:24:45,605: INFO: on: Waiting for application shutdown.]
+[2026-01-30 12:24:45,606: INFO: on: Application shutdown complete.]
+[2026-01-30 12:24:45,606: INFO: server: Finished server process [106222]]
+[2026-01-30 12:24:51,857: INFO: server: Started server process [108332]]
+[2026-01-30 12:24:51,857: INFO: on: Waiting for application startup.]
+[2026-01-30 12:24:51,858: INFO: on: Application startup complete.]
+[2026-01-30 12:24:51,858: INFO: server: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)]
+[2026-01-30 12:26:09,667: INFO: common: YAML file 'config/config.yaml' read successfully.]
+[2026-01-30 12:26:09,669: INFO: common: YAML file 'params.yaml' read successfully.]
+[2026-01-30 12:26:09,669: INFO: common: Directory 'artifacts' created successfully or already exists.]
+[2026-01-30 12:26:09,669: INFO: common: Directory 'artifacts/model_evaluation' created successfully or already exists.]
+[2026-01-30 12:28:14,787: INFO: server: Shutting down]
+[2026-01-30 12:28:14,887: INFO: on: Waiting for application shutdown.]
+[2026-01-30 12:28:14,888: INFO: on: Application shutdown complete.]
+[2026-01-30 12:28:14,888: INFO: server: Finished server process [108332]]
