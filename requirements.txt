@@ -1,6 +1,6 @@
 ipykernel
 fastapi
-transformers
+transformers>=4.26.0,<5.0.0
 transformers[sentencepiece]
 datasets
 sacrebleu
@@ -15,6 +15,7 @@ torch
 evaluate
 boto3
 mypy-boto3-s3
+accelerate>=1.1.0
 python-box==6.0.2
 ensure==1.0.2
 uvicorn==0.18.3
