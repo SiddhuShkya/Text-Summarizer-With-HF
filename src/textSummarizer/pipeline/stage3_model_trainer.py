@@ -1,5 +1,6 @@
 from src.textSummarizer.config.configuration import ConfigurationManager
 from src.textSummarizer.components.model_trainer import ModelTrainer
+from src.textSummarizer.logging import logger
 
 
 class ModelTrainerTrainingPipeline:
@@ -7,7 +8,11 @@ class ModelTrainerTrainingPipeline:
         pass
 
     def initiate_model_trainer(self):
-        config = ConfigurationManager()
-        model_trainer_config = config.get_model_trainer_config()
-        model_trainer = ModelTrainer(config=model_trainer_config)
-        model_trainer.train()
+        try:
+            config = ConfigurationManager()
+            model_trainer_config = config.get_model_trainer_config()
+            model_trainer = ModelTrainer(config=model_trainer_config)
+            model_trainer.train()
+        except Exception as e:
+            logger.exception(e)
+            raise e
