@@ -81,5 +81,33 @@ The model is fine-tuned using the **[samsum](https://huggingface.co/datasets/knk
    python app.py
    ```
 5. **Access the API:** 🌐
+   
+   ```text
+   http://localhost:8000/docs
+   ```
 
-   Open `http://localhost:8000/docs` in your browser.
+## Docker Deployment 🐳
+
+### 1. Using Docker Directly 📦
+
+**Build the Docker image:**
+```sh
+docker build -t text-s .
+```
+
+**Run the Docker container:**
+```sh
+docker run -p 8000:8000 text-s
+```
+
+### 2. Using Docker Compose 🛠️
+
+**Start the application:**
+```sh
+docker-compose up
+```
+
+**Stop the application:**
+```sh
+docker-compose down
+```

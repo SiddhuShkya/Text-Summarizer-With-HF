@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  text-summarizer:
+    build: .
+    container_name: text-summarizer
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
