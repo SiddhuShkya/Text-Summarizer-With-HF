@@ -91,14 +91,19 @@ The model is fine-tuned using the **[samsum](https://huggingface.co/datasets/knk
 ### 1. Using Docker Directly 📦
 
 **Build the Docker image:**
+
 ```sh
 docker build -t text-s .
 ```
 
 **Run the Docker container:**
+> [!IMPORTANT]
+> The application inside the container runs on port **8000**. You must map it to your desired host port.
+
 ```sh
 docker run -p 8000:8000 text-s
 ```
+*(To use a different host port, e.g., 8080, use `-p 8080:8000`)*
 
 ### 2. Using Docker Compose 🛠️
 
@@ -111,3 +116,6 @@ docker-compose up
 ```sh
 docker-compose down
 ```
+
+> [!TIP]
+> If you get a "Connection Refused" error, ensure you are using the correct port mapping (e.g., `8000:8000`). If your app listens on `0.0.0.0:8000` inside the container, mapping `-p 8080:8080` will fail because nothing is listening on 8080 inside the container.
